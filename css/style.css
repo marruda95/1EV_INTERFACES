@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+/******* CONTENT BASICS *********/
+body{
+    font-weight:400; 
+    font-family: Roboto; 
+    margin:0; 
+    padding:0; 
+    background-color:#232323;
+}
+
+#header, #slider, #footer, #search, #cta{
+    display:block; 
+    width: 960px; 
+    margin:0 auto;
+}
+
+figure, footer, header, section{
+    display:block; 
+    margin:100px 0 0 0; 
+    padding:0;
+}
+
+#slider{
+    padding:30px 0;
+} 
+
+#slider section{
+    display:block; 
+    width:100%; 
+    margin:50px 0 50px 0; 
+    padding:0;
+}
+
+.clear:after{
+    content:"."; 
+    display:block; 
+    height:0; 
+    clear:both; 
+    visibility:hidden; 
+    line-height:0;
+}
+
+.clear{
+    display:block; 
+    clear:both;
+}
+
+a{
+    outline: none; 
+    text-decoration: none;
+}
+
+/*************** TAMAÑOS COLUMNAS *****************/
+    /* 4/4 del tamaño de la columna */
+    .two_quarter{
+        display: block; 
+        float:left; 
+        margin:0 20px 0 0;
+        width:470px;
+    }
+
+    /* 1/3 del tamaño de la columna */
+    .one_third{
+        display:block; 
+        float:left; 
+        margin:0 30px 0 0;
+        
+        width:300px;
+    }
+
+    .lastbox{
+        margin-right:0;
+    }
+
+/*********** SEARCH ***********/
+    #search {
+        overflow: hidden;
+        background-color: #232323;
+        border: none;
+        width: 960px;
+        color: white;
+        font-style: italic;
+        font-size: 25px;
+    }
+/*********** CABECERA ***********/
+    /* Cabecera Styles */
+    .cabecera{
+        color:#979797; 
+        background-color:#232323;
+        padding:20px 0; 
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+    }
+    #header nav li{
+        display:inline; 
+        margin-left:30px; 
+        font-family: Roboto;
+        font-weight: 600;
+        text-transform:uppercase;
+    }
+    #header nav{
+        float: right;
+    }
+
+    /* Color Enlaces */
+    #header nav li a{
+        color:#41CFFA;
+        
+    }
+
+    /* Color Enlaces - Hover */
+    #header nav li a:hover{
+        color:#FFCE38; 
+    }
+    
+    /* Logotipo */
+    #sil, #joq{
+        font-family: PlayFair Display;
+        font-size: 30px;
+        float: left;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    /* Colores Logotipo */
+    #sil{color: #41CFFA;}
+    #joq{color: #FFCE38;}
+
+
+/******** CONTENIDO DE LA PÁGINA *******/ 
+    /* Rótulo Entrada // Slider */ 
+    .contenido{ 
+        background-color:#e9e9e9;
+    }
+    /* Títulos */
+    .contenido #slider .title{
+        font-family: Roboto;
+        font-weight: 900;
+        font-size: 50px;
+        color: #000000;
+        margin: 0;
+        padding-left: 60px;
+        letter-spacing: 1px;
+        text-transform:uppercase;
+    }
+    /* Texto */
+    .contenido #slider .parrafo{
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 16px;
+        color: #000000;
+        margin: 0;
+        padding-left: 60px;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+    /* Fromatting */
+    #slider{
+        display:block; 
+        max-width: 100%;
+    }
+
+    /* Grid de Noticias // Portfolio */
+    /* Titulos */
+    .contenido #gridNoticias .title{
+        font-family: Roboto;
+        font-weight: 600;
+        font-size: 24px;
+        color:#000000;
+        margin: 20px 0 20px 0;
+        padding: 0;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform:uppercase;
+    }
+    /* Párrafos */
+    .contenido #gridNoticias .parrafo{
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 16px;
+        color: #000000;
+        margin: 20px 0 50px 0;
+        padding: 0;
+        letter-spacing: 1px;
+        line-height: 25px;
+        text-align: center;
+    }
+    /* Botones y Hover de Boton */
+    .contenido #gridNoticias .button {
+        font-style: Roboto;
+        font-weight: 500;
+        text-decoration: none;
+        background-color: #41CFFA;
+        color: #000000;
+        padding: 15px 100px 15px 100px;
+        text-transform:uppercase;
+        border-radius: 20px;
+      }
+      .contenido #gridNoticias .button:hover {
+        opacity: 0.8;
+      }
+    
+
+
+    #slider #gridNoticias{
+        display:block; 
+        width:960px; 
+    }
+
+    /**** CALL TO ACTION *****/
+    /* Espaciado */
+    #cta{
+      padding: 40px 0 60px 0;
+    }
+    /* Títulos */
+    .contenido #cta .title{
+        font-family: Roboto;
+        font-weight: 600;
+        font-size: 24px;
+        color: #000000;
+        margin: 20px 0 20px 0;
+        padding: 0;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform:uppercase;
+    }
+    /* Texto */
+    .contenido #cta .parrafo{
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 16px;
+        color: #000000;
+        margin: 20px 0 50px 0;
+        padding: 0;
+        letter-spacing: 1px;
+        line-height: 25px;
+        text-align: center;
+    }
+    /* Boton / Enlace */
+    .contenido #cta .button {
+        font-style: Roboto;
+        font-weight: 500;
+        text-decoration: none;
+        background-color: #41CFFA;
+        color: #000000;
+        padding: 15px 100px 15px 100px;
+        text-transform:uppercase;
+        border-radius: 20px;
+        margin: 0 85px;
+      }
+      /* Boton / Enlace Hover */
+      .contenido #cta .button:hover {
+        opacity: 0.8;
+      }
+
+
+
+/****** FOOTER ********/
+
+    #footer{
+        padding:40px 0; 
+        font-size:18px; 
+        color:#e9e9e9;
+    }
+
+    /* Titulos */
+    #footer section .title{
+        font-family: Roboto;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: 1px;
+        margin:0 0 25px 0; 
+        padding:0; 
+        color: #FFCE38; 
+        font-size:18px; 
+        text-transform:uppercase;
+    }
+    /* Enlaces y Listados */
+    #footer section a, #footer section nav li{
+        font-family: Roboto;
+        font-weight: 500;
+        color:#e9e9e9;
+        margin:0 0 5px 0; 
+        padding:0 0 5px 0; 
+        list-style: none;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+    /* Enlaces y Listados Hover */
+    #footer section a:hover{
+        color: #FFCE38;
+    }
+
+
+
+    /** NEWSLETTER FORM **/
+
+    /* General Input Styles */
+    input[type=text],input[type=submit]{
+        width: 100%;
+        font-family: Roboto;
+        font-weight: 500;
+        color: #000000;
+        font-size: 16px;
+        text-transform:uppercase;
+        display: inline-block;
+        border-radius: 20px;
+    }
+
+    /* Text input style */
+    input[type=text]{
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    /* Button Input Styles */ 
+    input[type=submit] {
+        background-color: #FFCE38;
+        color: #000000;
+        border: none;
+        padding: 20px;
+        margin: 20px 20px;
+    }
+    /* Button Input Styles Hover */ 
+    input[type=submit]:hover {
+        opacity: 0.8;
+    } 
+
+    /* Checkbox Styles */
+    #footer input[type=checkbox] {
+        margin: 30px 5px;
+        font-weight: 500;
+        color: #e9e9e9;
+    }
+
+
+    .newsletter .parrafo{
+        color: #e9e9e9;
+        font-family: Roboto;
+        font-weight: 300;
+        line-height: 25px;
+        letter-spacing: 2px;
+
+    }
+
+    .newsletter .bold{
+        font-weight: 500;
+    }
+
+
+
+    
